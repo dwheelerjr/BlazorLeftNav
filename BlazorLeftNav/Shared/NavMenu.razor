@@ -1,0 +1,45 @@
+
+<div class="sidebar @NavMenuCssClass">
+    <div class="top-row pl-4 navbar navbar-dark fixed-top">
+        <span class="fas @arrowClass" @onclick="@ToggleNavMenu" style="cursor:pointer;"></span>
+    </div>
+    <div style="padding-top:50px;">
+        <ul class="nav flex-column">
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="fas fa-columns" aria-hidden="true"></span> <span hidden="@collapseNavMenu">Home</span>
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="counter">
+                    <span class="fas fa-plus" aria-hidden="true"></span> <span hidden="@collapseNavMenu">Counter</span>
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="fetchdata">
+                    <span class="fas fa-list" aria-hidden="true"></span> <span hidden="@collapseNavMenu">Fetch Data</span>
+                </NavLink>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@code {
+    bool collapseNavMenu = true;
+    string arrowClass = "fa-angle-double-right";
+
+    string NavMenuCssClass => collapseNavMenu ? "collapsed" : null;
+
+    void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+        if (collapseNavMenu)
+        {
+            arrowClass = "fa-angle-double-right";
+        }
+        else
+        {
+            arrowClass = "fa-angle-double-left";
+        }
+    }
+}
