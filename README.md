@@ -1,9 +1,9 @@
 ﻿
 # Collapsible left nav Blazor application
 
-![Extended](https://github.com/dwheelerjr/BlazorLeftNav/tree/master/BlazorLeftNav/wwwroot/Images/Extended.PNG)
+![Extended](https://user-images.githubusercontent.com/13876805/61490650-7a556880-a97b-11e9-99b0-0252771d2a49.png)
 
-![Collapsed](https://github.com/dwheelerjr/BlazorLeftNav/tree/master/BlazorLeftNav/wwwroot/Images/Collapsed.PNG)
+![Collapsed](https://user-images.githubusercontent.com/13876805/61490712-9953fa80-a97b-11e9-8b32-bedce2e42d69.png)
 
 ## Using with IE
 
