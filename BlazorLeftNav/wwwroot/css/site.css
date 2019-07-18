@@ -142,6 +142,7 @@ app {
         top: 0;
     }
 
+
     .main > div {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
@@ -154,5 +155,14 @@ app {
     .sidebar .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;
+    }
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /*IE 11*/
+    .main .top-row {
+        position: relative;
+        top: 0;
     }
 }
