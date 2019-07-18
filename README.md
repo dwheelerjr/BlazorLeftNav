@@ -9,8 +9,8 @@
 
 To use Blazor in IE you have to add the blazor polyfill to the _Host.cshtml file
 
-` 
-<script type="text/javascript" src="/blazor.polyfill.min.js"></script>
+```
+    <script type="text/javascript" src="/blazor.polyfill.min.js"></script>
 
     <script autostart="false" src="_framework/blazor.server.js"></script>
 
@@ -18,7 +18,7 @@ To use Blazor in IE you have to add the blazor polyfill to the _Host.cshtml file
         Blazor.start();
     </script> 
     
-`
+```
 
 
 
