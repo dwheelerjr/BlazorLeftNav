@@ -1,13 +1,13 @@
 ﻿
 # Collapsible left nav Blazor application
 
-###Desktop view
+### Desktop view
 
 ![Extended](https://user-images.githubusercontent.com/13876805/65983041-a47ed880-e44a-11e9-92b7-516e7ba8545f.PNG)
 
 ![Collapsed](https://user-images.githubusercontent.com/13876805/65983047-a779c900-e44a-11e9-9092-667e7c8744c8.PNG)
 
-###Mobile view
+### Mobile view
 
 ![mobile-collapsed](https://user-images.githubusercontent.com/13876805/65983698-23284580-e44c-11e9-8aaa-f2b5a4cf8050.PNG)
 
