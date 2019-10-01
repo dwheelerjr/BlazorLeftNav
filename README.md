@@ -1,9 +1,9 @@
 ﻿
 # Collapsible left nav Blazor application
 
-![Extended](https://user-images.githubusercontent.com/13876805/61490650-7a556880-a97b-11e9-99b0-0252771d2a49.png)
+![Extended](https://user-images.githubusercontent.com/13876805/65983041-a47ed880-e44a-11e9-92b7-516e7ba8545f.PNG)
 
-![Collapsed](https://user-images.githubusercontent.com/13876805/61490712-9953fa80-a97b-11e9-8b32-bedce2e42d69.png)
+![Collapsed](https://user-images.githubusercontent.com/13876805/65983047-a779c900-e44a-11e9-9092-667e7c8744c8.PNG)
 
 ## Using with IE
 
