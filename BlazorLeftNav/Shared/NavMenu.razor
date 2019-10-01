@@ -1,45 +1,76 @@
-
-<div class="sidebar @NavMenuCssClass">
-    <div class="top-row pl-4 navbar navbar-dark fixed-top">
-        <span class="fas @arrowClass" @onclick="@ToggleNavMenu" style="cursor:pointer;"></span>
+﻿<ul class="list-group">
+    <!-- Separator with title -->
+    <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+        <small>MAIN MENU</small>
+    </li>
+    <!-- /END Separator -->
+    <!-- Menu with submenu -->
+    <li data-target="#submenu1" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+            <span class="menu-collapsed">Dashboard</span>
+            <span class="submenu-icon ml-auto"></span>
+        </div>
+    </li>
+    <!-- Submenu content -->
+    <div id='submenu1' class="collapse sidebar-submenu">
+        <a href="/Counter" class="list-group-item list-group-item-action text-white">
+            <span class="menu-collapsed">Counter</span>
+        </a>
+        <a href="/fetchdata" class="list-group-item list-group-item-action text-white">
+            <span class="menu-collapsed">Fetch Data</span>
+        </a>
+        <a href="/" class="list-group-item list-group-item-action text-white">
+            <span class="menu-collapsed">Home</span>
+        </a>
     </div>
-    <div style="padding-top:50px;">
-        <ul class="nav flex-column">
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                    <span class="fas fa-columns" aria-hidden="true"></span> <span hidden="@collapseNavMenu">Home</span>
-                </NavLink>
-            </li>
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="counter">
-                    <span class="fas fa-plus" aria-hidden="true"></span> <span hidden="@collapseNavMenu">Counter</span>
-                </NavLink>
-            </li>
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="fetchdata">
-                    <span class="fas fa-list" aria-hidden="true"></span> <span hidden="@collapseNavMenu">Fetch Data</span>
-                </NavLink>
-            </li>
-        </ul>
+    <li data-target="#submenu2" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-user fa-fw mr-3"></span>
+            <span class="menu-collapsed">Profile</span>
+            <span class="submenu-icon ml-auto"></span>
+        </div>
+    </li>
+    <!-- Submenu content -->
+    <div id='submenu2' class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action text-white">
+            <span class="menu-collapsed">Settings</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action text-white">
+            <span class="menu-collapsed">Password</span>
+        </a>
     </div>
-</div>
+    <li class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-tasks fa-fw mr-3"></span>
+            <span class="menu-collapsed">Tasks <span class="badge badge-pill badge-primary ml-2">25</span></span>
+        </div>
+    </li>
+    <!-- Separator with title -->
+    <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+        <small>OPTIONS</small>
+    </li>
+    <!-- /END Separator -->
+    <li class="bg-dark list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-calendar fa-fw mr-3"></span>
+            <span class="menu-collapsed">Calendar</span>
+        </div>
+    </li>
+    <li class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="far fa-envelope fa-fw mr-3"></span>
+            <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
+        </div>
+    </li>
+    <!-- Separator without title -->
+    <li class="sidebar-separator menu-collapsed"></li>
+    <!-- /END Separator -->
+    <li class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+            <span class="fa fa-question fa-fw mr-3"></span>
+            <span class="menu-collapsed">Help</span>
+        </div>
+    </li> 
+</ul><!-- List Group END-->
 
-@code {
-    bool collapseNavMenu = true;
-    string arrowClass = "fa-angle-double-right";
-
-    string NavMenuCssClass => collapseNavMenu ? "collapsed" : null;
-
-    void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-        if (collapseNavMenu)
-        {
-            arrowClass = "fa-angle-double-right";
-        }
-        else
-        {
-            arrowClass = "fa-angle-double-left";
-        }
-    }
-}

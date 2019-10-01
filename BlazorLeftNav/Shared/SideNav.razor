@@ -1,0 +1,34 @@
+﻿  <!-- Sidebar -->
+<div id="sidebar-container" class="@NavMenuCssClass d-none d-md-block">
+   <NavMenu></NavMenu>
+
+    <ul class="list-group nav-bottom">
+        <li href="#" @onclick="@ToggleNavMenu" class="list-group-item list-group-item-action d-flex align-items-center">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+                <span id="collapse-icon" class="fas @FA_Angle_Class mr-3"></span>
+                <span id="collapse-text" class="menu-collapsed">Collapse</span>
+            </div>
+        </li>
+        <!-- Separator without title -->
+        <li class="sidebar-separator menu-collapsed"></li>
+        <!-- /END Separator -->
+        <!-- Logo -->
+        <li class="logo-separator d-flex justify-content-center menu-collapsed">
+            <img src='../appdev_white.png' class="img-fluid" />
+        </li>
+    </ul>
+</div><!-- sidebar-container END -->
+
+@code {
+    bool collapseNavMenu = false;
+
+    string NavMenuCssClass = "sidebar-expanded";
+    string FA_Angle_Class = "fa-angle-double-left";
+
+    void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+        NavMenuCssClass = collapseNavMenu ? "sidebar-collapsed" : "sidebar-expanded";
+        FA_Angle_Class = collapseNavMenu ? "fa-angle-double-right" : "fa-angle-double-left";
+    }
+}

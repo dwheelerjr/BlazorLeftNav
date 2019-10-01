@@ -1,27 +1,13 @@
 ﻿@inherits LayoutComponentBase
 
-    <NavMenu />
 
-    <div class="main">
-        <div class="top-row px-4">
+<TopNav></TopNav>
 
-            <a class="navbar-brand" href="">
-                <img class="img-fluid" src="../logo.png" />
-            </a>
-            <span class="app-title">My Amazing App</span>
-       
-            <div class="nav-item ml-md-auto">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Help</a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="/FAQ">FAQ</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="mailto:servicedesk@mycompany.com?subject=Need help with the Engagement Monitoring Dashboard">Email Service Desk</a>
-                    <a class="dropdown-item" href="">Some other help</a>
-                </div>
-            </div>
-        </div>
+<div class="row" id="body-row">
 
-        <div class="content px-4">
-            @Body
-        </div>
+  <SideNav></SideNav>
+
+    <div class="content col">
+        @Body
     </div>
+</div>
