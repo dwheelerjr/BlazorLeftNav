@@ -102,7 +102,17 @@
     font-weight: 900;
 }
 
+.sidebar-collapsed .collapse-icon::after {
+    content: " \f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 
+.sidebar-expanded .collapse-icon::after {
+    content: " \f100";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 
 
 /*bootstrap color overrides*/
@@ -118,6 +128,7 @@
     content: " \f0da";
     font-family: "Font Awesome 5 Free";
     color: #ffffff;
+    font-weight: 900;
 }
 
 

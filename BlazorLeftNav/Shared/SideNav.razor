@@ -5,7 +5,7 @@
     <ul class="list-group nav-bottom">
         <li href="#" @onclick="@ToggleNavMenu" class="list-group-item list-group-item-action d-flex align-items-center">
             <div class="d-flex w-100 justify-content-start align-items-center">
-                <span id="collapse-icon" class="fas @FA_Angle_Class mr-3"></span>
+                <span id="collapse-icon" class="collapse-icon mr-3"></span>
                 <span id="collapse-text" class="menu-collapsed">Collapse</span>
             </div>
         </li>
@@ -23,12 +23,10 @@
     bool collapseNavMenu = false;
 
     string NavMenuCssClass = "sidebar-expanded";
-    string FA_Angle_Class = "fa-angle-double-left";
 
     void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
         NavMenuCssClass = collapseNavMenu ? "sidebar-collapsed" : "sidebar-expanded";
-        FA_Angle_Class = collapseNavMenu ? "fa-angle-double-right" : "fa-angle-double-left";
     }
 }
