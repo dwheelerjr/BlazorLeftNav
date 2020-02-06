@@ -1,6 +1,6 @@
 ﻿  <!-- Sidebar -->
 <div id="sidebar-container" class="@NavMenuCssClass d-none d-md-block">
-   <NavMenu></NavMenu>
+    <NavMenu></NavMenu>
 
     <ul class="list-group nav-bottom">
         <li href="#" @onclick="@ToggleNavMenu" class="list-group-item list-group-item-action d-flex align-items-center">
@@ -20,6 +20,7 @@
 </div><!-- sidebar-container END -->
 
 @code {
+    [Parameter] public EventCallback<string> OnChange { get; set; }
     bool collapseNavMenu = false;
 
     string NavMenuCssClass = "sidebar-expanded";
@@ -28,5 +29,7 @@
     {
         collapseNavMenu = !collapseNavMenu;
         NavMenuCssClass = collapseNavMenu ? "sidebar-collapsed" : "sidebar-expanded";
+        string result = collapseNavMenu ? "collapsed" : "expanded";
+        OnChange.InvokeAsync(result);
     }
 }

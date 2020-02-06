@@ -1,0 +1,199 @@
+.content {
+    background-color: #f4f4f2;
+    padding: 15px;
+    width: 100%;
+}
+
+
+#body-row {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+#sidebar-container {
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, #225b7c 0%, #225b7c 70%);
+    padding: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+    #sidebar-container .list-group-item {
+        border-radius: 0 !important;
+    }
+
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: inherit;
+}
+
+.sidebar-collapsed {
+    width: 60px;
+}
+
+    .sidebar-collapsed .menu-collapsed {
+        display: none !important;
+    }
+
+/* Menu item*/
+#sidebar-container .list-group .list-group-item {
+    color: white;
+    cursor: pointer;
+}
+
+.blue-background {
+    background-image: linear-gradient(180deg, #225b7c 0%, #225b7c 70%);
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+    padding-top:10px;
+    padding-right:53px;
+}
+
+#sidebar-container a.active {
+    background-color: rgba(255,255,255,0.25);
+}
+
+#sidebar-container.sidebar-expanded a {
+    padding: 5px;
+}
+
+#sidebar-container.sidebar-expanded a {
+    padding: 5px;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+}
+.list-group-item.active {
+   background-color: rgba(255,255,255,0.25) !important;
+    border:none;
+}
+
+
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-image: linear-gradient(180deg, #56C9C1 20%, #61CBC8 70%);
+    height: 35px;
+    color: #ffffff;
+    padding: .75rem 1.25rem;
+}
+
+    .sidebar-separator-title.text-muted {
+        color: #ffffff !important;
+    }
+
+.sidebar-separator {
+    background-color: transparent !important;
+    height: 25px;
+}
+
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    margin-bottom: 25px;
+}
+
+.sidebar-expanded .nav-bottom li {
+    padding-right: 10px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+    content: " \f0d7";
+    font-family: "Font Awesome 5 Free";
+    display: inline;
+    text-align: right;
+    padding-left: 10px;
+    font-weight: 900;
+}
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+    content: " \f0da";
+    font-family: "Font Awesome 5 Free";
+    display: inline;
+    text-align: right;
+    padding-left: 10px;
+    font-weight: 900;
+}
+
+.sidebar-collapsed .collapse-icon::after {
+    content: " \f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.sidebar-expanded .collapse-icon::after {
+    content: " \f100";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+
+/*bootstrap color overrides*/
+.badge-primary {
+    background-color: #407ec9;
+}
+
+.navbar-toggler {
+    background-color: #56C9C1;
+}
+
+.navbar-toggler-icon {
+    content: " \f0da";
+    font-family: "Font Awesome 5 Free";
+    color: #ffffff;
+    font-weight: 900;
+}
+
+
+/*Top Nav styles*/
+@media (min-width: 768px) {
+    .top-row {
+        background-color: #e6e6e6 !important;
+        border-bottom: 1px solid #d6d5d5;
+        height: 50px;
+        padding: 22px;
+    }
+
+    .content {
+        background-color: #f4f4f2;
+        padding: 15px;
+        width: 100%;
+        margin-left: 208px; /* Same as the width of the sidebar*/
+    }
+
+        .content.content-extended {
+            margin-left: 60px;
+        }
+
+        .content.no-sidenav {
+            margin-left: 0;
+        }
+    .sidebar-expanded .nav-bottom {
+        width: 208px; /* Same as the width of the sidebar*/
+    }
+}
+
+.top-row .nav-item .nav-link {
+    color: #56C9C1;
+}
+
+    .top-row .nav-item.active .nav-link,
+    .top-row .nav-item .nav-link.active,
+    .top-row .nav-item:hover .nav-link {
+        color: #ffffff;
+        background-color: #56C9C1;
+        padding: 10px;
+    }

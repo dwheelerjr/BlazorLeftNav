@@ -1,0 +1,313 @@
+﻿/******* DHG Basic CSS version 1.0.0 ***********/
+body {
+    padding-bottom: 20px;
+    background-color: #f4f4f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.body-content {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    margin-top: 0px;
+}
+
+/*.navbar {
+    background-color: #fff;
+    border-bottom: none;
+    padding-right: 55px;
+}*/
+
+/*.uppernav {
+    background-color: #fff;
+}
+
+.navbar-toggle:hover {
+    background-color: #666666 !important;
+    color: #FFFFFF !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #407EC9 !important;
+}
+
+    .navbar-nav > li:hover, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > li > a:hover {
+        background-color: #666666 !important;
+        color: #FFFFFF !important;
+    }*/
+
+.k-menu .k-menu-scroll-button:hover, .k-menu .k-state-hover > .k-link,
+.k-menu .k-state-hover > .k-link > .task-item-count {
+    background-color: #666666 !important;
+    border-color: #666666 !important;
+    color: #ffffff !important;
+    background-image: none !important;
+}
+
+.k-calendar .k-footer .k-nav-today {
+    color: #407ec9 !important;
+}
+
+.k-calendar td.k-state-selected .k-link,
+.k-calendar td.k-state-hover .k-link {
+    border-color: #407ec9 !important;
+    background-color: #407ec9 !important;
+    color: #ffffff !important;
+    background-image: none !important;
+}
+
+.k-panelbar .k-tabstrip-items .k-state-active, .k-tabstrip-items .k-state-active {
+    border-color: #407ec9 !important;
+}
+
+./*nav li {
+    text-align: center;
+    align-content: center;
+}
+
+.navbar-brand {
+    padding: 0 15px !important;
+    margin: 5px 15px 1px 15px;
+}
+
+.navbar-nav > li > a {
+    padding: 7px 15px !important;
+}*/
+
+.block-white {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 7px;
+}
+
+.form-white {
+    background-color: #fff;
+    padding: 55px 100px 25px 0;
+}
+
+/*.page-header {
+    margin: 0 0 10px 3px;
+    border: none !important;
+}
+
+footer {
+    padding: 10px 20px 30px 20px;
+    background-color: #666666;
+    min-height: 85px;
+    background-image: none;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    color: #FFFFFF;
+}
+
+    footer p {
+        margin-left: 15px;
+    }
+
+.window-footer {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 95%;
+    margin-top: 150px;
+    padding: 19px 0 20px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+
+.k-autocomplete, .k-textbox > input, .k-autocomplete .k-input,
+.k-picker-wrap .k-input, .k-numeric-wrap .k-input,
+.k-dropdown-wrap .k-input, .k-selectbox .k-input,
+.k-datepicker {
+    min-height: 100% !important;
+    min-width: 100% !important;
+}
+
+.k-picker-wrap .k-input {
+    height: 2.2em;
+}
+
+.k-dropdown-wrap {
+    min-height: 100%;
+}
+
+input {
+    border-radius: 0 !important;
+}
+
+.k-edit-form-container {
+    width: auto !important;
+}
+
+.k-button.k-state-focused {
+    background-color: #407EC9 !important;
+}
+
+.k-dialog-buttongroup {
+    text-align: right;
+    padding: 5px !important;
+}
+
+    .k-dialog-buttongroup .k-button {
+        margin-left: 5px;
+    }
+
+.k-textbox {
+    max-width: 1750px !important;
+    width: 100% !important;
+}
+
+.k-dropdown {
+    max-width: 1750px !important;
+}
+
+
+.k-button {
+    min-width: 70px;
+}
+
+.control-label {
+    font-size: 100% !important;
+    font-weight: normal !important;
+}
+
+.k-upload {
+    border: #e5e5e5 1px solid !important;
+    max-width: 450px;
+}
+
+span.k-widget.k-tooltip-validation {
+    border-color: red;
+    background-color: white;
+    box-shadow: none;
+    color: red;
+}
+
+.errorBlock {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+    text-align: right;
+}
+
+.k-autocomplete span.k-loading {
+    right: 20px;
+}
+
+*, :before, :after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.form-control,
+.container,
+.container-fluid,
+.row,
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
+
+
+.k-context-menu {
+    padding: 5px;
+    min-width: 180px;
+}
+
+.DHGContextMenu {
+    border-left: 10px solid #dbdbdb;
+}
+
+.fa-info-circle {
+    color: #407EC9;
+}
+
+
+
+
+/*################
+    media queries
+#############*/
+
+@media screen and (max-width: 400px) {
+
+
+    .body-content {
+        padding-top: 30px 15px;
+    }
+
+    #logo .thumbnail {
+        background-color: transparent;
+        border: none;
+        padding: 10px 0 0 0;
+    }
+
+    .navbar {
+        background-color: #fff;
+        border-bottom: none;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 400px) and (max-width:768px) {
+    .navbar {
+        background-color: #fff;
+        border-bottom: none;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1080px) {
+
+    .navbar {
+        background-color: #fff;
+        border-bottom: none;
+        padding-right: 0px;
+    }
+
+    .k-dropdown-wrap {
+        min-height: 100%;
+    }
+}
+
+@media (min-width:1080px) {
+    .k-dropdown-wrap {
+        min-height: 100%;
+    }
+}
+
+/***********END DHG Basic CSS***************/

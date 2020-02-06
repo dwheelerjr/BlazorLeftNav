@@ -3,11 +3,19 @@
 
 <TopNav></TopNav>
 
-<div class="row" id="body-row">
+<div id="body-row">
 
-  <SideNav></SideNav>
+    <SideNav OnChange="@SideBarChanged"></SideNav>
 
-    <div class="content col">
+    <div class="content @ContentClass">
         @Body
     </div>
 </div>
+
+@code{
+    private string ContentClass { get; set; }
+    private void SideBarChanged(string state)
+    {
+        ContentClass = state == "collapsed" ? "content-extended" : "";
+    }
+}
