@@ -13,7 +13,7 @@
 
 #sidebar-container {
     min-height: 100vh;
-    background-image: linear-gradient(180deg, #225b7c 0%, #225b7c 70%);
+    background-color: #e6e6e6;
     padding: 0;
     position: fixed;
     z-index: 1;
@@ -40,8 +40,12 @@
 
 /* Menu item*/
 #sidebar-container .list-group .list-group-item {
-    color: white;
+    color: #454545;
     cursor: pointer;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #f4f4f2;
+    border-bottom: 1px solid #f4f4f2;
 }
 
 .blue-background {
@@ -57,7 +61,7 @@
 }
 
 #sidebar-container a.active {
-    background-color: rgba(255,255,255,0.25);
+    background-color: #56c9c1;
 }
 
 #sidebar-container.sidebar-expanded a {
@@ -72,7 +76,7 @@
     background-color: transparent !important;
 }
 .list-group-item.active {
-   background-color: rgba(255,255,255,0.25) !important;
+   background-color: #56c9c1 !important;
     border:none;
 }
 
@@ -83,7 +87,8 @@
 
 /* Separators */
 .sidebar-separator-title {
-    background-image: linear-gradient(180deg, #56C9C1 20%, #61CBC8 70%);
+    /*background-image: linear-gradient(180deg, #56C9C1 20%, #61CBC8 70%);*/
+    background-color: #225b7c !important;
     height: 35px;
     color: #ffffff;
     padding: .75rem 1.25rem;
@@ -140,10 +145,14 @@
     font-weight: 900;
 }
 
+#sidebar-container .nav-links {
+    overflow-y: auto;
+    max-height: 80vh;
+}
 
 /*bootstrap color overrides*/
 .badge-primary {
-    background-color: #407ec9;
+    background-color: #225b7c;
 }
 
 .navbar-toggler {
