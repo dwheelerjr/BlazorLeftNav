@@ -14,15 +14,15 @@
     </li>
     <!-- Submenu content -->
     <div id='submenu1' class="collapse sidebar-submenu">
-        <a href="/Counter" class="list-group-item list-group-item-action">
+        <NavLink Match="NavLinkMatch.All" href="/Counter" class="list-group-item list-group-item-action">
             <span class="menu-collapsed">Counter</span>
-        </a>
-        <a href="/fetchdata" class="list-group-item list-group-item-action">
+        </NavLink>
+        <NavLink Match="NavLinkMatch.All" href="/fetchdata" class="list-group-item list-group-item-action">
             <span class="menu-collapsed">Fetch Data</span>
-        </a>
-        <a href="/" class="list-group-item list-group-item-action">
+        </NavLink>
+        <NavLink Match="NavLinkMatch.All" href="/" class="list-group-item list-group-item-action">
             <span class="menu-collapsed">Home</span>
-        </a>
+        </NavLink>
     </div>
     <li data-target="#submenu2" data-toggle="collapse" aria-expanded="false" class=" list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-start align-items-center">
